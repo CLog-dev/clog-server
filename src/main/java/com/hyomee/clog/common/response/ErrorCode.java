@@ -19,7 +19,7 @@ public enum ErrorCode {
     METHOD_NOT_ALLOWED(40502, HttpStatus.METHOD_NOT_ALLOWED, "지원하지 않는 HTTP 메서드입니다."),
 
     // ⚪ 406
-    HTTP_MEDIA_TYPE_NOT_ACCEPTABLE(40601, HttpStatus.NOT_ACCEPTABLE, "지원하지 않는 미디어 타입입니다."),
+    HTTP_MEDIA_TYPE_NOT_ACCEPTABLE(40601, HttpStatus.NOT_ACCEPTABLE, "요청한 미디어 타입을 제공할 수 없습니다."),
 
     // ⚪ 500
     INTERNAL_SERVER_ERROR(50001, HttpStatus.INTERNAL_SERVER_ERROR,  "서버 내부 오류가 발생했습니다.");
