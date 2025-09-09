@@ -1,4 +1,4 @@
-package com.hyomee.clog;
+package com.hyomee.clog.config;
 
 import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
