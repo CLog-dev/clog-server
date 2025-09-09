@@ -25,7 +25,7 @@ public class GlobalExceptionHandler {
     }
 
     // ⚪ 요청 헤더 누락 예외 처리
-    @ExceptionHandler(Exception.class)
+    @ExceptionHandler(MissingRequestHeaderException.class)
     public ResponseEntity<ApiResponse<Void>> handleMissingHeader(MissingRequestHeaderException e) {
         ErrorCode errorCode = ErrorCode.REQUEST_HEADER_EMPTY;
         return ResponseEntity.status(errorCode.getStatus())
