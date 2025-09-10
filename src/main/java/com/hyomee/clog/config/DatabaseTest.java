@@ -13,7 +13,7 @@ import java.sql.SQLException;
 @Slf4j
 @Component
 @RequiredArgsConstructor
-@Profile("dev")
+@Profile("local")
 public class DatabaseTest {
 
     private final DataSource dataSource;
